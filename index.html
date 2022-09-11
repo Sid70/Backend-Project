@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Title -->
+    <div class="container">
+        <div class="heading">
+            <h1 class="title">Registration Form</h1>
+        </div>
+        <hr>
+
+        <!-- Form design -->
+        <div class="form">
+            <form onsubmit="return validate();" action="registration_form.php" method="post">
+                <label for="name">Name:
+                    <input type="text" id="name" name="name" required>
+                </label>
+                <label for="email">Email Id:
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label for="phNumber">Phone Number:
+                    <input type="number" id="phNumber" name="phNumber" required>
+                </label>
+                <label for="dob">Date of Birth:
+                    <input type="date" id="dob" name="dob" required>
+                </label>
+                <label for="password">Password:
+                    <input type="password" id="password" name="password" required>
+                </label>
+                <label for="Cpassword">Confirm Password:
+                    <input type="password" id="Cpassword" name="Cpassword" required>
+                </label>
+
+            <br>
+
+                <div class="button">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </div>
+
+                <p style="text-align: center;margin-top: 5px;">Already have an account?<a href="login_index.html"> Login</a></p>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validate()
+        {
+            let password = document.getElementById('password').value;
+            let Cpassword = document.getElementById('Cpassword').value;
+
+
+            if  ( password != Cpassword )
+            {
+                alert("Password do not match.");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

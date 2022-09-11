@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Title -->
+    <div class="container" style="height: 350px;">
+        <div class="heading">
+            <h1 class="title">Login Form</h1>
+        </div>
+        <hr>
+
+        <!-- Form design -->
+        <div class="form">
+            <form action="login_form.php" method="post">
+                <label for="email">Email Id:
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label for="password">Password:
+                    <input type="password" id="password" name="password" required>
+                </label>
+
+            <br>
+
+                <div class="button">
+                    <input type="submit" value="Log In">
+                    <input type="reset" value="Reset">
+                </div>
+
+                <p style="text-align: center; margin-top: 20px;">Don't have an account?<a href="index.html"> Sign Up</a></p>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

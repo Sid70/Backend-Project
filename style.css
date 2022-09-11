@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(216, 55, 195);
+}
+
+body {
+    background-color: black;
+}
+
+
+.container {
+    width: 35%;
+    height: 580px;
+    border: 2px solid purple;
+    margin: 60px auto;
+    border-radius: 13px;
+    box-shadow: 1px 1px 6px 4px cyan;
+}
+
+.heading {
+    text-align: center;
+    padding: 13px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label {
+    display: block;
+    padding: 6px 20px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 3px 5px;
+    margin: 3px 0px;
+    background-color: rgb(229, 177, 177);
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 7px;
+    outline: none;
+
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    padding: 6px 20px;
+    justify-content: space-around;
+
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 7px 5px;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: blanchedalmond;
+    color: black;
+
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+
+    background-color: rgb(110, 14, 125);
+    color: white;
+
+}
+
+@media (max-width:1024px) {
+
+    .container {
+        width: 50%;
+        
+    }
+}
+
+@media (max-width:768px) {
+
+    .container {
+        width: 60%;
+        
+    }
+}
+
+@media (max-width:425px) {
+
+    .container {
+        width: 80%;
+        
+    }
+}
+
+@media (max-width:290px) {
+
+    .container {
+        width: 95%;
+        
+    }
+}
